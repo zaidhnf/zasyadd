@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Masukkan username">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Masukkan password">
+            
+            <button type="submit">Login</button>
+        </form>
+        <div class="error-message" id="error-message">Username atau password salah!</div>
+        <a href="#" class="extra-link">Lupa password?</a>
+        <script src="mira.js" defer></script>
+    </div>
+</body>
+</html>

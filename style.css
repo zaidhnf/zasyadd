@@ -1,0 +1,144 @@
+ body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #b12a04, rgb(243, 231, 6),#14e430, #08d6e1, rgb(4, 72, 229)); /* Gradien Background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Style untuk container login */
+        .login-container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        /* Animasi untuk efek slide-in */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header form */
+        h2 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Style untuk label input */
+        label {
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+            display: block;
+        }
+
+        /* Style untuk input fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect untuk input */
+        input:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 8px rgba(37, 117, 252, 0.6);
+        }
+
+        /* Tombol login */
+        button {
+            background-color: #2575fc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        /* Efek hover pada tombol */
+        button:hover {
+            background-color: #6a11cb;
+            transform: scale(1.05);
+        }
+
+        /* Pesan error */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Style untuk link forgot password atau lainnya */
+        .extra-link {
+            display: block;
+            margin-top: 15px;
+            color: #2575fc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .extra-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Animasi untuk form */
+        .login-container::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: #2575fc;
+            border-radius: 50%;
+            animation: pulse 6s infinite;
+            z-index: 1;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+        }
+
+        .login-container form {
+            position: relative;
+            z-index: 2;
+        }

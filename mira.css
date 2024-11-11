@@ -1,0 +1,121 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #ae0810, #ce0cc1, rgb(72, 5, 207));
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Album Section */
+.album-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #df7c81, #f084e9, rgb(72, 5, 207));
+}
+
+.album-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.photo-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.photo-item p {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.photo-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #ae0810, #ce0cc1, rgb(72, 5, 207));
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    header .container h1 {
+        font-size: 28px;
+    }
+
+    .album-section h2 {
+        font-size: 28px;
+    }
+
+    footer .container p {
+        font-size: 14px;
+    }
+}
+/* Desain untuk desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Desain untuk layar kecil (ponsel) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue; /* Mengubah latar belakang di ponsel */
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
